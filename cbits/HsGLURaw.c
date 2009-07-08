@@ -81,7 +81,7 @@ hs_GLU_getProcAddress(const char *name)
     handle = dlopen(NULL, RTLD_LAZY);
   }
 
-  return handle ? dlsym(handle, name : NULL;
+  return handle ? dlsym(handle, name) : NULL;
 }
 
 /* -------------------------------------------------------------------------- */
