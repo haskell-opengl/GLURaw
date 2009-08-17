@@ -50,8 +50,8 @@ library
       cc-options: "-DUSE_GETPROCADDRESS"
    else
       cpp-options: "-DCALLCONV=ccall"
-      extra-libraries: GLU
       if os(darwin)
          cc-options: "-DUSE_NSADDRESSOFSYMBOL"
       else
+         extra-libraries: GLU
          cc-options: "-DUSE_DLSYM"
