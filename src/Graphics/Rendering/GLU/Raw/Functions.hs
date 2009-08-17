@@ -142,4 +142,4 @@ API_ENTRY(gluTessNormal,Ptr GLUtesselator -> GLdouble -> GLdouble -> GLdouble ->
 API_ENTRY_SAFE(gluTessProperty,Ptr GLUtesselator -> GLenum -> GLdouble -> IO ())
 API_ENTRY_SAFE(gluTessVertex,Ptr GLUtesselator -> Ptr GLdouble -> Ptr a -> IO ())
 API_ENTRY(gluUnProject,GLdouble -> GLdouble -> GLdouble -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLint -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLdouble -> IO GLint)
-API_ENTRY(gluUnProject4,GLdouble -> GLdouble -> GLdouble -> GLdouble -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLint -> GLdouble -> GLdouble -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLdouble -> IO GLint)
+API_ENTRY(gluUnProject4,GLdouble -> GLdouble -> GLdouble -> GLdouble -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLint -> GLclampd -> GLclampd -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLdouble -> Ptr GLdouble -> IO GLint)
