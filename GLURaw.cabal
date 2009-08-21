@@ -46,12 +46,12 @@ library
    ghc-options: -Wall
    if os(windows) && flag(UseNativeWindowsLibraries)
       cpp-options: "-DCALLCONV=stdcall"
-      extra-libraries: glu32
       cc-options: "-DUSE_GETPROCADDRESS"
+      extra-libraries: glu32
    else
       cpp-options: "-DCALLCONV=ccall"
+      cc-options: "-DUSE_DLSYM"
       if os(darwin)
-         cc-options: "-DUSE_NSADDRESSOFSYMBOL"
+         frameworks: OpenGL
       else
          extra-libraries: GLU
-         cc-options: "-DUSE_DLSYM"
