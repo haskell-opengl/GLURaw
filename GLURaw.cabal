@@ -2,8 +2,8 @@ name: GLURaw
 version: 1.1.0.1
 license: BSD3
 license-file: LICENSE
-maintainer: Sven Panne <sven.panne@aedion.de>
-bug-reports: mailto:hopengl@haskell.org
+maintainer: Jason Dagit <dagitj@gmail.com>, Sven Panne <sven.panne@aedion.de>
+bug-reports: https://github.com/haskell-opengl/GLURaw/issues
 homepage: http://www.haskell.org/haskellwiki/Opengl
 category: Graphics
 synopsis: A raw binding for the OpenGL graphics system
@@ -57,5 +57,5 @@ library
          extra-libraries: GLU
 
 source-repository head
-  type:     darcs
-  location: http://code.haskell.org/OpenGL/GLURaw/
+  type:     git
+  location: https://github.com/haskell-opengl/GLURaw
