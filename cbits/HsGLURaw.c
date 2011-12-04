@@ -69,6 +69,11 @@ hs_GLU_getProcAddress(const char *name)
 #include <stdlib.h>
 #include <dlfcn.h>
 
+#ifndef __APPLE__
+#include <stdio.h>
+#include <GL/glu.h>
+#endif
+
 void*
 hs_GLU_getProcAddress(const char *name)
 {
@@ -80,6 +85,13 @@ hs_GLU_getProcAddress(const char *name)
     /* Get a handle for our executable. */
     handle = dlopen(NULL, RTLD_LAZY);
   }
+
+#ifndef __APPLE__
+  /* Hack to force linking of GLU on Linux */
+  FILE *bitbucket = fopen("/dev/null", "w");
+  fprintf(bitbucket, "%p\n", gluBeginCurve);
+  fclose(bitbucket); 
+#endif
 
   return handle ? dlsym(handle, name) : NULL;
 }
