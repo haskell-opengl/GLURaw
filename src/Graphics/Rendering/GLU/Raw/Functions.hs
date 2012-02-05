@@ -76,9 +76,11 @@ module Graphics.Rendering.GLU.Raw.Functions (
 ) where
 
 import Foreign.Ptr
+import Foreign.C.Types
 import Graphics.Rendering.GLU.Raw.APIEntry
 import Graphics.Rendering.GLU.Raw.Types
 import Graphics.Rendering.OpenGL.Raw.Core31
+import Graphics.Rendering.OpenGL.Raw.Core31.TypesInternal
 
 #include "HsGLURaw.h"
 
