@@ -80,7 +80,7 @@ import Foreign.C.Types
 import Graphics.Rendering.GLU.Raw.APIEntry
 import Graphics.Rendering.GLU.Raw.Types
 import Graphics.Rendering.OpenGL.Raw.Core31
-import Graphics.Rendering.OpenGL.Raw.Core31.TypesInternal
+import Graphics.Rendering.OpenGL.Raw.Core31.Types
 
 #include "HsGLURaw.h"
 

@@ -52,7 +52,7 @@ module Graphics.Rendering.GLU.Raw.Callbacks (
 import Foreign.Ptr
 import Foreign.C.Types
 import Graphics.Rendering.OpenGL.Raw
-import Graphics.Rendering.OpenGL.Raw.Core31.TypesInternal
+import Graphics.Rendering.OpenGL.Raw.Core31.Types
 
 --------------------------------------------------------------------------------
 
