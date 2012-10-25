@@ -1,1 +1,9 @@
 language: haskell
+before_install:
+  - pushd ..
+  - git clone --depth=100 --quiet https://github.com/haskell-opengl/OpenGLRaw.git
+  - cd OpenGLRaw
+  - git checkout
+  - cabal install
+  - popd
+  - ghc-pkg list
