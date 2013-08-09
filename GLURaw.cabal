@@ -1,8 +1,8 @@
 name: GLURaw
-version: 1.3.0.0
+version: 1.4.0.0
 license: BSD3
 license-file: LICENSE
-maintainer: Jason Dagit <dagitj@gmail.com>, Sven Panne <sven.panne@aedion.de>
+maintainer: Jason Dagit <dagitj@gmail.com>, Sven Panne <svenpanne@gmail.com>
 bug-reports: https://github.com/haskell-opengl/GLURaw/issues
 homepage: http://www.haskell.org/haskellwiki/Opengl
 category: Graphics
@@ -42,7 +42,7 @@ library
       cbits/HsGLURaw.c
    hs-Source-Dirs: src
    include-dirs: include
-   build-depends: base >= 3 && < 5, OpenGLRaw == 1.3.*
+   build-depends: base >= 3 && < 5, OpenGLRaw == 1.4.*
    ghc-options: -Wall
    if os(windows) && flag(UseNativeWindowsLibraries)
       cpp-options: "-DCALLCONV=stdcall"
