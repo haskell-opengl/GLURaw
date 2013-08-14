@@ -21,6 +21,7 @@ description:
 build-type: Simple
 cabal-version:  >= 1.6
 extra-source-files:
+   README.md
    include/HsGLURaw.h
 
 flag UseNativeWindowsLibraries
@@ -43,7 +44,7 @@ library
    hs-Source-Dirs: src
    include-dirs: include
    build-depends: base >= 3 && < 5, OpenGLRaw == 1.4.*
-   ghc-options: -Wall
+   ghc-options: -Wall -O2
    if os(windows) && flag(UseNativeWindowsLibraries)
       cpp-options: "-DCALLCONV=stdcall"
       cc-options: "-DUSE_GETPROCADDRESS"
