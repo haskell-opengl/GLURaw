@@ -55,7 +55,7 @@ library
       if os(darwin)
          frameworks: OpenGL
       else
-         extra-libraries: GLU
+         extra-libraries: GLU, GL
 
 source-repository head
   type:     git
