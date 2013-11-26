@@ -18,7 +18,7 @@ install:
  - pushd ..
  - git clone --depth=100 --quiet https://github.com/haskell-opengl/OpenGLRaw.git
  - cd OpenGLRaw
- - cabal install --enable-documentation
+ - cabal-1.18 install --enable-documentation
  - popd
  - ghc-pkg list
 
