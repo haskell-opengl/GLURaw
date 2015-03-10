@@ -1,5 +1,5 @@
 name: GLURaw
-version: 1.4.0.2
+version: 1.5.0.0
 synopsis: A raw binding for the OpenGL graphics system
 description:
   GLURaw is a raw Haskell binding for the GLU 1.3 OpenGL utility library. It is
@@ -14,6 +14,7 @@ description:
   and <http://www.opengl.org/registry/>.
 homepage: http://www.haskell.org/haskellwiki/Opengl
 bug-reports: https://github.com/haskell-opengl/GLURaw/issues
+copyright: Copyright (C) 2009-2015 Sven Panne
 license: BSD3
 license-file: LICENSE
 author: Sven Panne
@@ -23,7 +24,6 @@ build-type: Simple
 cabal-version:  >= 1.10
 extra-source-files:
   README.md
-  include/HsGLURaw.h
 
 flag UseNativeWindowsLibraries
   description:
@@ -43,10 +43,12 @@ library
   c-sources:
     cbits/HsGLURaw.c
   hs-source-dirs: src
-  include-dirs: include
-  build-depends: base >= 3 && < 5, OpenGLRaw >= 1.3.0.0
+  build-depends:
+    base         >= 4   && < 5,
+    transformers >= 0.2 && < 0.5,
+    OpenGLRaw    >= 2.4 && < 2.5
   default-language: Haskell2010
-  ghc-options: -Wall -O2
+  ghc-options: -Wall
   other-extensions: CPP
   if os(windows) && flag(UseNativeWindowsLibraries)
     if arch(i386)
