@@ -38,7 +38,6 @@ library
     Graphics.Rendering.GLU.Raw.Tokens
     Graphics.Rendering.GLU.Raw.Types
   other-modules:
-    Graphics.Rendering.GLU.Raw.APIEntry
     Graphics.Rendering.GLU.Raw.TypesInternal
   c-sources:
     cbits/HsGLURaw.c
