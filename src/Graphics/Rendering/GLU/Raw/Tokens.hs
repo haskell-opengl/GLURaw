@@ -14,7 +14,7 @@
 
 module Graphics.Rendering.GLU.Raw.Tokens where
 
-import Graphics.Rendering.OpenGL.Raw.Core31
+import Graphics.GL.Core31
 
 --------------------------------------------------------------------------------
 

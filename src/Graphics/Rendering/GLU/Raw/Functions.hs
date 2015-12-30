@@ -85,7 +85,7 @@ import Foreign.Ptr ( Ptr, FunPtr, nullFunPtr )
 import System.IO.Unsafe ( unsafePerformIO )
 
 import Graphics.Rendering.GLU.Raw.Types
-import Graphics.Rendering.OpenGL.Raw.Types
+import Graphics.GL.Types
 
 --------------------------------------------------------------------------------
 
