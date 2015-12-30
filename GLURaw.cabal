@@ -49,7 +49,10 @@ library
     OpenGLRaw    >= 3.0 && < 3.1
   default-language: Haskell2010
   ghc-options: -Wall
-  other-extensions: CPP
+  other-extensions:
+    CPP
+    PatternSynonyms
+    ScopedTypeVariables
   if os(windows) && flag(UseNativeWindowsLibraries)
     if arch(i386)
       cpp-options: "-DCALLCONV=stdcall"
