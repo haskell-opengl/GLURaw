@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- |
--- Module      :  Graphics.Rendering.GLU.Raw.Types
+-- Module      :  Graphics.GLU
 -- Copyright   :  (c) Sven Panne 2016
 -- License     :  BSD3
 --
@@ -8,14 +8,18 @@
 -- Stability   :  stable
 -- Portability :  portable
 --
--- All (abstract) types from GLU 1.3, see <http://www.opengl.org/>.
+-- A 1:1 binding for the OpenGL utility library.
 --
 --------------------------------------------------------------------------------
 
-module Graphics.Rendering.GLU.Raw.Types (
-   GLUnurbs,
-   GLUquadric,
-   GLUtesselator
+module Graphics.GLU (
+   module Graphics.GLU.Functions,
+   module Graphics.GLU.Tokens,
+   module Graphics.GLU.Types,
+   module Graphics.GLU.Callbacks
 ) where
 
-import Graphics.Rendering.GLU.Raw.TypesInternal
+import Graphics.GLU.Functions
+import Graphics.GLU.Tokens
+import Graphics.GLU.Types
+import Graphics.GLU.Callbacks

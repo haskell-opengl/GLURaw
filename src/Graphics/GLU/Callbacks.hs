@@ -1,7 +1,7 @@
 {-# LANGUAGE CPP #-}
 --------------------------------------------------------------------------------
 -- |
--- Module      :  Graphics.Rendering.GLU.Raw.Callbacks
+-- Module      :  Graphics.GLU.Callbacks
 -- Copyright   :  (c) Sven Panne 2016
 -- License     :  BSD3
 --
@@ -13,7 +13,7 @@
 --
 --------------------------------------------------------------------------------
 
-module Graphics.Rendering.GLU.Raw.Callbacks (
+module Graphics.GLU.Callbacks (
    -- * Tessellator Callbacks
    -- ** Tessellator Callbacks without Polygon Data
    TessBeginCallback, makeTessBeginCallback,

@@ -1,7 +1,7 @@
 {-# OPTIONS_HADDOCK hide #-}
 --------------------------------------------------------------------------------
 -- |
--- Module      :  Graphics.Rendering.GLU.Raw.TypesInternal
+-- Module      :  Graphics.GLU.TypesInternal
 -- Copyright   :  (c) Sven Panne 2016
 -- License     :  BSD3
 --
@@ -13,7 +13,7 @@
 --
 --------------------------------------------------------------------------------
 
-module Graphics.Rendering.GLU.Raw.TypesInternal where
+module Graphics.GLU.TypesInternal where
 
 data GLUnurbs = GLUnurbs
 

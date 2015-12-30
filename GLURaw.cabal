@@ -33,13 +33,13 @@ flag UseNativeWindowsLibraries
 
 library
   exposed-modules:
-    Graphics.Rendering.GLU.Raw
-    Graphics.Rendering.GLU.Raw.Callbacks
-    Graphics.Rendering.GLU.Raw.Functions
-    Graphics.Rendering.GLU.Raw.Tokens
-    Graphics.Rendering.GLU.Raw.Types
+    Graphics.GLU
+    Graphics.GLU.Callbacks
+    Graphics.GLU.Functions
+    Graphics.GLU.Tokens
+    Graphics.GLU.Types
   other-modules:
-    Graphics.Rendering.GLU.Raw.TypesInternal
+    Graphics.GLU.TypesInternal
   c-sources:
     cbits/HsGLURaw.c
   hs-source-dirs: src

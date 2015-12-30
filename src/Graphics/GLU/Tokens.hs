@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- |
--- Module      :  Graphics.Rendering.GLU.Raw.Tokens
+-- Module      :  Graphics.GLU.Tokens
 -- Copyright   :  (c) Sven Panne 2016
 -- License     :  BSD3
 --
@@ -12,7 +12,7 @@
 --
 --------------------------------------------------------------------------------
 
-module Graphics.Rendering.GLU.Raw.Tokens where
+module Graphics.GLU.Tokens where
 
 import Graphics.GL.Core31
 

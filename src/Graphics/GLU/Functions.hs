@@ -1,7 +1,7 @@
 {-# LANGUAGE CPP #-}
 --------------------------------------------------------------------------------
 -- |
--- Module      :  Graphics.Rendering.GLU.Raw.Functions
+-- Module      :  Graphics.GLU.Functions
 -- Copyright   :  (c) Sven Panne 2016
 -- License     :  BSD3
 --
@@ -13,7 +13,7 @@
 --
 --------------------------------------------------------------------------------
 
-module Graphics.Rendering.GLU.Raw.Functions (
+module Graphics.GLU.Functions (
    gluBeginCurve,
    gluBeginPolygon,
    gluBeginSurface,
@@ -84,7 +84,7 @@ import Foreign.Marshal.Error ( throwIf )
 import Foreign.Ptr ( Ptr, FunPtr, nullFunPtr )
 import System.IO.Unsafe ( unsafePerformIO )
 
-import Graphics.Rendering.GLU.Raw.Types
+import Graphics.GLU.Types
 import Graphics.GL.Types
 
 --------------------------------------------------------------------------------

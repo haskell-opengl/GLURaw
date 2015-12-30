@@ -1,5 +1,7 @@
 2.0.0.0
 -------
+* Changed module name prefix from `Graphics.Rendering.GLU.Raw` to `Graphics.GLU`.
+
 
 1.5.0.3
 -------
