@@ -1,7 +1,7 @@
 2.0.0.0
 -------
+* Use pattern synonyms.
 * Changed module name prefix from `Graphics.Rendering.GLU.Raw` to `Graphics.GLU`.
-
 
 1.5.0.3
 -------
