@@ -75,9 +75,6 @@ module Graphics.GLU.Functions (
    gluUnProject4,
 ) where
 
--- Make the foreign imports happy.
-import Foreign.C.Types
-
 import Control.Monad.IO.Class ( MonadIO(..) )
 import Foreign.C.String ( withCString, CString )
 import Foreign.Marshal.Error ( throwIf )

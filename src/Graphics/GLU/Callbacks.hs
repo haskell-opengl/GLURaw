@@ -50,7 +50,6 @@ module Graphics.GLU.Callbacks (
 ) where
 
 import Foreign.Ptr
-import Foreign.C.Types
 import Graphics.GL
 
 --------------------------------------------------------------------------------
