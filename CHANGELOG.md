@@ -1,3 +1,7 @@
+2.0.0.1
+-------
+* Relaxed upper version bound for `OpenGLRaw`.
+
 2.0.0.0
 -------
 * Use pattern synonyms.
