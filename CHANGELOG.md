@@ -1,3 +1,8 @@
+2.0.0.2
+-------
+* Relaxed upper version bound for `OpenGLRaw`.
+* Silence warnings about pattern synonyms with no type signatures.
+
 2.0.0.1
 -------
 * Relaxed upper version bound for `OpenGLRaw`.
