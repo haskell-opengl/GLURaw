@@ -69,10 +69,16 @@ hs_GLU_getProcAddress(const char *name)
 #include <stdlib.h>
 #include <dlfcn.h>
 
-#ifndef __APPLE__
-#include <stdio.h>
-#include <GL/glu.h>
+static const char* libNames[] = {
+#ifdef __APPLE__
+  /* Try public framework path first. */
+  "/Library/Frameworks/OpenGL.framework/OpenGL",
+  /* If the public path failed, try the system framework path. */
+  "/System/Library/Frameworks/OpenGL.framework/OpenGL"
+#else
+  "libGLU.so", "libGLU.so.1"
 #endif
+};
 
 void*
 hs_GLU_getProcAddress(const char *name)
@@ -81,17 +87,12 @@ hs_GLU_getProcAddress(const char *name)
   static void *handle = NULL;
 
   if (firstTime) {
+    int i, numNames = (int)(sizeof(libNames) / sizeof(libNames[0]));
     firstTime = 0;
-    /* Get a handle for our executable. */
-    handle = dlopen(NULL, RTLD_LAZY);
+    for (i = 0;   (!handle) && (i < numNames);   ++i) {
+      handle = dlopen(libNames[i], RTLD_LAZY | RTLD_GLOBAL);
+    }
   }
-
-#ifndef __APPLE__
-  /* Hack to force linking of GLU on Linux */
-  FILE *bitbucket = fopen("/dev/null", "w");
-  fprintf(bitbucket, "%p\n", gluBeginCurve);
-  fclose(bitbucket); 
-#endif
 
   return handle ? dlsym(handle, name) : NULL;
 }

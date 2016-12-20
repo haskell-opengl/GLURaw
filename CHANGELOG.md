@@ -1,3 +1,7 @@
+2.0.0.3
+-------
+* Fixed dynamic loading of GLU library for recent GHC versions.
+
 2.0.0.2
 -------
 * Relaxed upper version bound for `OpenGLRaw`.
