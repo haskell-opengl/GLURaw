@@ -1,3 +1,7 @@
+2.0.0.5
+-------
+* Relaxed upper version bound for `transformers`.
+
 2.0.0.4
 -------
 * Relaxed upper version bound for `OpenGLRaw`.
